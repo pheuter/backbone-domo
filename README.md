@@ -1,4 +1,4 @@
-# Backbone.Domo
+# Backbone-Domo
 
 Augment your views with DOM awareness
 
@@ -14,17 +14,17 @@ It *is* possible to design your applications so that you can execute DOM-depende
 
 There are some drawbacks to this pattern. While sometimes it is good design, you may not always want to show a View onto a Region. Coupling your Views to Regions just for the `onShow` may be overhead you could be better off without. Also, you may start to find your views implementing logic in `onShow` that should go into an `onRender` instead. `onShow` implies your View will be part of some layout or parent view but you may prefer to de-couple your views from their implementation and not have to constrain yourself.
 
-This is where Backbone.Domo comes in.
+This is where Backbone-Domo comes in.
 
 ## Domo arigato, Mr. Roboto
 
-Backbone.Domo utilizes [Mutation observers](https://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#mutation-observers) to efficiently react when your View's `el` gets inserted into the DOM and notify the View via an event.
+Backbone-Domo utilizes [Mutation observers](https://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#mutation-observers) to efficiently react when your View's `el` gets inserted into the DOM and notify the View via an event.
 
 Many browsers currently do not support Mutation observers, but luckily the [Polymer](https://github.com/Polymer) team developed a polyfill that Domo utilizes as a fallback.
 
 ## Usage
 
-Using Backbone.Domo in your views couldn't get any simpler:
+Using Backbone-Domo in your views couldn't get any simpler:
 
 ```javascript
 initialize: function() {
