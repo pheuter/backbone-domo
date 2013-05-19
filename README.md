@@ -6,7 +6,7 @@ Augment your views with DOM awareness
 
 Knowing when an element is inserted into the DOM is an essential piece of information when it comes to developing web applications that depend on various UI states (such as height).
 
-Backbone, especially [Marionette](http://marionettejs.com), does an excellent job providing developers with intuitive constructs for encapsuling and working with DOM elements. From initializers to destructors you can track the state of your Views with ease. Unfortunately, the View does not have any notion of being inserted into the DOM.
+Backbone, especially [Marionette](http://marionettejs.com), does an excellent job providing developers with intuitive constructs for encapsulating and working with DOM elements. From initializers to destructors you can track the state of your Views with ease. Unfortunately, the View does not have any notion of being inserted into the DOM.
 
 > Note, `render` does **not** imply a DOM insertion. What usually happens when a Backbone.View is rendered is its `el` gets populated with some data, but that `el` can be sitting somewhere in memory detached from the DOM.
 
