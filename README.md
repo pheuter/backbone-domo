@@ -28,12 +28,10 @@ Using Backbone-Domo in your views couldn't get any simpler:
 
 ```javascript
 initialize: function() {
-  Backbone.Domo.arigato(this, 'dom:insert');
-
-  this.listenTo(this, 'dom:insert', function(event) {
-    console.log("View is now in the DOM!");
-    console.log("View width: " + this.$el.width())
-  });
+  Backbone.Domo.arigato(this);
+  
+  this.listenTo(this, 'domo:insert', this.onDomInsert);
+  this.listenTo(this, 'domo:detach', this.onDomoDetach);
 }
 ```
 
