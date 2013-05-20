@@ -1,0 +1,5 @@
+0.1.0
+-----
+
+* Default 'domo:insert' event fired upon DOM insertion, customizable via optional options object passed to `arigato`
+* Refactored `arigato` logic to detach Domo from View upon DOM insertion, optimizes memory usage
