@@ -3,7 +3,7 @@
  * Use of this source code is governed by a MIT license
  * that can be found in the LICENSE file.
  *
- * Version 0.1.0
+ * Version 0.1.1
  */
 
 Backbone.Domo = (function(Backbone) {
