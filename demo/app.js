@@ -34,12 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // Domo.detach should be called by this point
       // After 'domo:insert' event is fired, `detach` is called for performance.
       //
-      // It's still a good idea to manually call `detach()` when a view is closed, just in case
-      //   it was never inserted into the DOM.
+      // It's still a good idea to manually call `detach()` when a view is
+      //  closed, just in case it was never inserted into the DOM.
       Backbone.Domo.detach(this);
-
       this.remove();
-
       console.log("View is now closed");
     }
   });
